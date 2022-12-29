@@ -1,0 +1,25 @@
+* {
+  background-color: #f8f8ff;
+}
+
+.App {
+  text-align: center;
+}
+
+.addBtn {
+  float: left;
+  display:flex;
+}
+
+
+.edit {
+  margin-right: 5px;
+}
+
+.search{
+  float: right;
+}
+
+.filter{
+  margin-left: 10px;
+}

@@ -1,0 +1,22 @@
+{
+  "invite": [
+    {
+      "title": "Test",
+      "date": "2022-12-09",
+      "status": "Pending",
+      "id": 1
+    },
+    {
+      "title": "Test A",
+      "date": "2022-12-29",
+      "status": "Pending",
+      "id": 2
+    },
+    {
+      "title": "Test B",
+      "date": "2022-12-30",
+      "status": "Done",
+      "id": 3
+    }
+  ]
+}
