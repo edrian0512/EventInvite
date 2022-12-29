@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const InvCreate = () => {
 
@@ -20,7 +21,7 @@ const InvCreate = () => {
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(invData)
         }).then((res) => {
-            alert('Added Successfully!')
+            Swal.fire('Added ','','success')
             navigate('/')
         }).catch((err) => {
             console.log(err.message)

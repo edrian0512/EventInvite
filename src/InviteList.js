@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const InviteList = () => {
@@ -15,7 +16,7 @@ const InviteList = () => {
             fetch("http://localhost:8000/invite/" + id, {
                 method: "DELETE"
             }).then((res) => {
-                alert('Successfully Deleted!')
+                Swal.fire('Data has Been Successfully Deleted!','','success')
                 window.location.reload();
             }).catch((err) => {
                 console.log(err.message)

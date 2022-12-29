@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const InvEdit = () => {
     const { invid } = useParams();
@@ -36,7 +37,7 @@ const InvEdit = () => {
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(invData)
         }).then((res) => {
-            alert('Added Successfully!')
+            Swal.fire('Data Has Been Updated','','success')
             navigate('/')
         }).catch((err) => {
             console.log(err.message)
@@ -92,7 +93,7 @@ const InvEdit = () => {
 
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <button className="btn btn-success edit" type="submit">Save</button>
+                                                <button className="btn btn-success edit" type="submit">Update</button>
                                                 <Link to="/" className="btn btn-danger">Back</Link>
                                             </div>
                                         </div>
